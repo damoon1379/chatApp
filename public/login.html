@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WELCOME TO REALCHAT!</h1>
+
+      <div class="formContainer">
+        <form action="http://localhost:3000/login" method="post" id="loginForm">
+          <label for="loginForm">Log in</label>
+
+          <input
+            type="text"
+            id="loginName"
+            name="loginName"
+            placeholder="type your name..."
+            required
+          />
+          <input
+            type="text"
+            name="loginPassword"
+            id="loginPassword"
+            placeholder="password"
+            required
+          />
+          <button type="submit" id="loginBtn">Submit</button>
+        </form>
+        <form
+          action="http://localhost:3000/signup"
+          method="post"
+          id="signupForm"
+        >
+          <label for="signupForm">Sign up</label>
+
+          <input
+            type="text"
+            id="signupName"
+            name="signupName"
+            placeholder="type your name..."
+            required
+          />
+          <input
+            type="text"
+            name="signupPassword"
+            id="signupPassword"
+            placeholder="password"
+            required
+          />
+          <button type="submit" id="signupBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

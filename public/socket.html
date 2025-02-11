@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./socket.css" />
+    <title>Chat Room</title>
+  </head>
+  <body>
+    <div style="display: flex; gap: 10px">
+      <a
+        href="http://localhost:3000/"
+        style="text-decoration: none; font-size: large"
+        >Login/Signup page</a
+      >
+      <a
+        href="http://localhost:3000/logout"
+        style="text-decoration: none; font-size: large"
+        >Log out</a
+      >
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <form id="form-join">
+      <input
+        type="text"
+        id="name"
+        maxlength="8"
+        placeholder="Your name"
+        size="5"
+        required
+      />
+      <input type="text" id="room" placeholder="Chat room" size="5" required />
+      <button id="join" type="submit">Join</button>
+    </form>
+
+    <div style="width: 75%" id="chat-display"></div>
+
+    <p class="user-list"></p>
+
+    <p class="room-list"></p>
+
+    <form class="form-msg">
+      <input
+        style="width: 75%"
+        type="text"
+        id="message"
+        placeholder="Your message"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+
+    <p class="activity"></p>
+    <script src="./app.js"></script>
+  </body>
+</html>

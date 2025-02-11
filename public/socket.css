@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FDF2E9;
+    color:#4A235A ;
+    font-family: Montserrat ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    gap:10px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    color:#4A235A ;
+    width: 100%;
+    gap: 5px;
+    font-size: large;
+    justify-content: center;
+}
+button{
+    color: #E67E22 ;
+    border: 2px solid #D35400;
+    border-radius: 5px;
+    font-size: larger;
+
+}
+button:hover{
+    box-shadow: 2px 2px 2px 0px;
+    color:#D35400 ;
+}
+input{
+    color:black ;
+    border-radius: 5px;
+    font-size: large;
+}
+.post__header--user{
+align-self: flex-end;
+border: #D35400 2px solid;
+border-radius: 10px 10px 0 10px;
+right: 0px;
+}
+.post__text--user{
+    background-color: #D35400;
+}
+.post__header--reply{
+    align-self: flex-start;
+    border: #4A235A 2px solid;
+    border-radius: 10px 10px 0 10px;
+    right: 0px;
+    }
+    .post__text--reply{
+        background-color: #4A235A;
+        color: #D35400;
+    }
+#chat-display{
+    display: flex;
+    flex-direction: column;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    word-wrap: break-word;
+}
